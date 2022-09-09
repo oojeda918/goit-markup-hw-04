@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <title>WebStudio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-  <body>
+  <title>WebStudio</title>
+</head>
+
+<body>
+  <div class="container">
     <header class="site-header">
       <a class="logoPrincipal" href="index.html">WebStudio</a>
 
-      <ul class="list-container">
-        <li>
-          <a class="list-item" href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a class="list-item" href="studio.html">Estudio</a>
-        </li>
-        <li>
-          <a class="list-item" href="portfolio.html">Portafolio</a>
-        </li>
-      </ul>
-      <!-- <a href="contact.html">Contact</a>
-      <a href="studio.html">Estudio</a>
-      <a href="portfolio.html">Portafolio</a> -->
+      <nav class="nav">
+        <ul class="list-container">
+          <li>
+            <a class="list-item" href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="list-item" href="studio.html">Estudio</a>
+          </li>
+          <li>
+            <a class="list-item" href="portfolio.html">Portafolio</a>
+          </li>
+        </ul>
+      </nav>
 
       <div class="headercontact">
+        <aside>
+          <svg class="icon-sobre">
+            <use href="./images/sprites.svg#icon-sobre-activable">
+          </svg>
+        </aside>
         <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <aside>
+          <svg class="icon-smarthphone">
+            <use href="./images/sprites.svg#icon-telefonointeligente">
+          </svg>
+        </aside>
         <a href="tel:+525555296000">+52 55 5529 6000</a>
       </div>
     </header>
 
     <main>
-      <section class="herocontainer">
+      <section class="herocontainer section">
         <div class="herocontent">
           <h1 class="tittlehero">
             SOLUCIONES EFICACES PARA <br />
@@ -47,7 +59,39 @@
         </div>
       </section>
 
-      <section>
+      <section class="services section">
+        <div class="icons-qualitiescontainer">
+          <ul class="icons-qualitieslist">
+            <li class="icons-qualitiesitem">
+              <aside>
+                <svg>
+                  <use href="./images/sprites.svg#icon-antena">
+                </svg>
+              </aside>
+            </li>
+            <li class="icons-qualitiesitem">
+              <aside>
+                <svg>
+                  <use href="./images/sprites.svg#icon-reloj">
+                </svg>
+              </aside>
+            </li>
+            <li class="icons-qualitiesitem">
+              <aside>
+                <svg>
+                  <use href="./images/sprites.svg#icon-diagrama">
+                </svg>
+              </aside>
+            </li>
+            <li class="icons-qualitiesitem">
+              <aside>
+                <svg>
+                  <use href="./images/sprites.svg#icon-astronauta">
+                </svg>
+              </aside>
+            </li>
+          </ul>
+        </div>
         <div class="qualitiescontainer">
           <ul class="qualitieslist">
             <li class="qualitiesitem">
@@ -68,8 +112,8 @@
             <li class="qualitiesitem">
               <h4>PLANIFICACIÓN</h4>
               <p>
-                Usted podrá observar y participar en cada fase del desarrollo y
-                aplicación de soluciones.
+                Usted podrá observar y participar en cada fase del desarrollo
+                y aplicación de soluciones.
               </p>
             </li>
             <li class="qualitiesitem">
@@ -81,71 +125,60 @@
             </li>
           </ul>
         </div>
-      </section>
 
-      <section class="services">
         <div>
           <div class="tittleservices">
             <h3>A qué nos dedicamos</h3>
           </div>
 
-          <img
-            src="images/servicio1.jpg"
-            alt="Servicio de maquetado"
-            width="300"
-          />
-          <img
-            src="images/servicio2.jpg"
-            alt="Servicio de diseño"
-            width="300"
-          />
+          <img src="images/servicio1.jpg" alt="Servicio de maquetado" width="300" />
+          <img src="images/servicio2.jpg" alt="Servicio de diseño" width="300" />
           <img src="images/servicio3.jpg" alt="Servicio de color" width="300" />
         </div>
       </section>
 
-      <section class="profilecontainer">
+      <section class="profilecontainer section">
         <div class="ustittle">
           <h3>Nuestro Equipo</h3>
         </div>
 
         <div class="cardprofile">
-          <img
-            src="images/Andrescubo.jpg"
-            alt="Foto de diseñador"
-            width="300"
-          />
+          <img src="images/Andrescubo.jpg" alt="Foto de diseñador" width="300" />
 
           <p class="personname">Ándres Cubo</p>
           <p class="personposition">Diseñador de Productos</p>
         </div>
         <div class="cardprofile">
-          <img
-            src="images/Carlapalacios.jpg"
-            alt="Foto Desarrolladora Frontend"
-            width="300"
-          />
+          <img src="images/Carlapalacios.jpg" alt="Foto Desarrolladora Frontend" width="300" />
           <p class="personname">Carla Palacios</p>
           <p class="personposition">Desarrolladora Frontend</p>
         </div>
         <div class="cardprofile">
-          <img
-            src="images/Mariodorado.jpg"
-            alt="Foto encargado de Marketing"
-            width="300"
-          />
+          <img src="images/Mariodorado.jpg" alt="Foto encargado de Marketing" width="300" />
           <p class="personname">Mario Dorado</p>
           <p class="personposition">Marketing</p>
         </div>
         <div class="cardprofile">
-          <img
-            src="images/pablomijangos.jpg"
-            alt="Foto Diseñador IU "
-            width="300"
-          />
+          <img src="images/pablomijangos.jpg" alt="Foto Diseñador IU " width="300" />
 
           <p class="personname">Pablo Mijangos</p>
           <p class="personposition">Diseñador IU</p>
         </div>
+      </section>
+
+      <section>
+        <div class="tittleservices">
+          <h3>Clientes Regulares</h3>
+        </div>
+
+        <ul class="clients">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
       </section>
     </main>
 
@@ -158,18 +191,16 @@
 
           <ul class="list-footer">
             <li>
-              <a class="contactfooter" href="mailto:info@example.com"
-                >info@example.com</a
-              ><br />
+              <a class="contactfooter" href="mailto:info@example.com">info@example.com</a><br />
             </li>
             <li>
-              <a class="contactfooter" href="tel:+525555296000 "
-                >+52 55 5529 6000</a
-              >
+              <a class="contactfooter" href="tel:+525555296000 ">+52 55 5529 6000</a>
             </li>
           </ul>
         </address>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
