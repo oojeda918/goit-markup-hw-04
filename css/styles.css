@@ -67,7 +67,6 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #2196f3;
 }
 
@@ -129,7 +128,8 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: #2f303a;
+  background-image: url(/images/hero.jpg);
+  background-color: rgba(47, 48, 58, 0.4);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -323,7 +323,7 @@ body {
 
 .cardprofile {
   width: 270px;
-  height: 368px;
+  height: 428px;
   border-radius: 0px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -355,30 +355,119 @@ body {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
-/* CLIENTES */
-
-.clients {
+.socialprofiles {
   display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px;
 }
 
+.icons-socialprofiles {
+  width: 20px;
+  height: 20px;
+}
+
+.icons-socialprofiles:hover {
+  fill: red;
+}
+/* CLIENTES */
+
+.icons-clientscontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-clientslist {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.icons-clientsitem {
+  display: flex;
+  width: 170px;
+  height: 81px;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icons-clientsitem:hover {
+  border: 1px solid #2196f3;
+}
+
+.icons-clientsitem svg {
+  fill: #afb1b8;
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
 /* FOOTER */
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   background: #2f303a;
-  justify-content: space-around;
 }
 
 .contentfooter {
   display: flex;
-  flex-basis: 80%;
   flex-direction: column;
   align-items: flex-start;
-  margin: 60px 0%;
+  margin: 0px 20px 0 10%;
+}
+
+.socialfooter {
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  list-style: none;
+
+  margin: 0px 20px 0 10%;
+}
+
+.socialfooter h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.listsocialfooter {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.listsocialfooter li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.icons-socialfooter {
+  width: 22px;
+  height: 22px;
 }
 
 .footerlogo {
