@@ -126,7 +126,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-image: url(/images/hero.jpg);
+  background-image: url(../images/hero.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   flex-wrap: wrap;
   justify-content: center;
