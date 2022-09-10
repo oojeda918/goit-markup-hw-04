@@ -565,12 +565,20 @@ body {
   padding: 94px 0px;
 }
 
+.portfoliocontainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
 .filterportfolio {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   max-width: 1200px;
   justify-content: center;
   margin: auto;
+  padding-bottom: 0;
 }
 
 .buttonsmainportfolio {
@@ -607,9 +615,10 @@ body {
 
 .products {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   max-width: 1200px;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: auto;
 }
 
@@ -620,11 +629,17 @@ body {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
 }
 
 .cardproducts img {
   width: 370px;
   height: 294px;
+}
+
+.cardproducts p {
+  padding-left: 5%;
+  margin: 0;
 }
 
 .tittleproducts {
