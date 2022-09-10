@@ -329,6 +329,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 5%;
 }
 
 .cardprofile img {
@@ -367,14 +368,40 @@ body {
   padding: 10px;
 }
 
+.socialprofiles li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.socialprofiles li:hover {
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
 .icons-socialprofiles {
   width: 20px;
   height: 20px;
+
+  padding: 44px;
+  fill: #afb1b8;
+}
+.icons-socialprofiles:hover {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
-.icons-socialprofiles:hover {
-  fill: red;
-}
 /* CLIENTES */
 
 .icons-clientscontainer {
@@ -403,6 +430,7 @@ body {
 
 .icons-clientsitem:hover {
   border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .icons-clientsitem svg {
@@ -410,6 +438,15 @@ body {
   display: flex;
   width: 70px;
   height: 70px;
+  padding: 41px 85px;
+}
+
+.icons-clientsitem svg:hover {
+  fill: #2196f3;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  padding: 41px 85px;
 }
 /* FOOTER */
 
@@ -417,6 +454,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: #2f303a;
+  padding: 60px 0 47px 0px;
 }
 
 .contentfooter {
@@ -465,9 +503,21 @@ body {
   border-radius: 100%;
 }
 
+.listsocialfooter li:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #2196f3;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
 .icons-socialfooter {
   width: 22px;
   height: 22px;
+  fill: #ffffff;
 }
 
 .footerlogo {
