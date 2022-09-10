@@ -77,6 +77,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.headercontact:hover {
+  fill: #2196f3;
+  color: #2196f3;
+}
 .headercontact a {
   display: flex;
   font-family: "Roboto";
@@ -88,6 +92,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   margin-right: 50px;
+  padding: 15px 0px;
 }
 
 .headercontact a:hover {
@@ -105,18 +110,11 @@ body {
   height: 12px;
   width: 16px;
 }
-.icon-sobre:hover {
-  fill: #2196f3;
-  color: #2196f3;
-}
+
 .icon-smarthphone {
   margin-right: 10px;
   height: 16px;
   width: 10px;
-}
-
-.icon-smarthphone *:hover {
-  fill: #2196f3;
 }
 
 /* HERO */
